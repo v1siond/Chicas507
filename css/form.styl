@@ -1,0 +1,261 @@
+body
+    .main_wrapper
+        display flex 
+        flex-flow row wrap
+        .container
+            flex 1 98%
+            order 2
+            margin auto
+            margin-top 65px  
+            .titulo
+                h2
+                    font-size 1.3em
+                h3
+                    margin 0 auto
+                    font-size 1em
+            .division
+                flex 1 100%
+                margin 5% auto
+                position relative
+                .flecha-down
+                    position absolute
+                    width 100%
+                    left 0%
+                    .flecha-down2
+                        margin-left 50%
+            .form
+                width 100%
+                .content
+                    display flex
+                    flex-flow row wrap  
+                    width 100%
+                    section
+                        margin-top 5%
+                        border-top 1px solid rgba(main_color, 0.3)
+                    .inputs
+                        display inline-block
+                        width 100%
+                        .form-control
+                            border-radius 0
+                            border 1px solid rgba(main_color, 0.3)
+                            background fondo
+                            color main_color
+                            &:hover
+                                border 1px solid main_color
+                                box-shadow  0 1px 1px rgba(main_color,0.75)
+                    .datos
+                        flex 1 100%
+                        border none
+                        .inputs
+                            margin 0.5% auto
+                    .servs
+                        flex 1 100%
+                        display flex
+                        flex-flow row wrap
+                        .servicios
+                            flex 1 100%
+                        .otros_servs
+                            flex 1 100%
+                        .idioma
+                            flex 1 100%
+                        b
+                            display block
+                            height 5px 
+                            margin-top 5%
+                            color main_color
+                            font-family Poiret One
+                            font-weight bold
+                            font-size 1.2em
+                        input
+                            margin 0 auto
+                    .miscelaneo
+                        flex 1 100%
+                        .inputs
+                            margin-top 5%
+                            input
+                                padding 3px
+                    .bio_enviar
+                        flex 1 100%
+                        .inputs
+                            margin-top 5%
+                            textarea
+                                width 100%
+                                max-with 100%
+                                height 150px
+                                max-height 150px
+                        .boton
+                            width 70%
+                            margin auto
+                            button
+                                text-align center
+                                width 100%
+                                border-radius 0
+                                background fondo
+                                color main_color
+                                border 1px solid main_color
+                                &:hover
+                                    border 1px solid fondo
+                                    box-shadow  0 1px 1px rgba(main_color,0.75)
+                                    background main_color
+                                    color fondo
+                                    transition all 0.55s
+                                    
+                        
+            .redes-sociales
+                margin 5% auto 
+                width 90%
+                height 100px
+                text-shadow 2px 1px 1px black
+                text-align center
+                a
+                    display inline-block
+                    background main_color
+                    border-radius 50%
+                    width 50px
+                    height 50px
+                    line-height 50px
+                    margin 1%
+                    border 2px solid gris
+                    &:hover
+                        transition all 0.5s
+                        background fondo
+                        i 
+                            color main_color
+                    i
+                        display inline-block
+                        font-style normal
+                        font-size 1.2em
+                        font-weight normal
+                        line-height 1
+                        -webkit-font-smoothing antialiased
+                        -moz-osx-font-smoothing grayscale
+                        color white
+        footer
+            flex 1 100%
+            order 3
+            background rgba(black, 0.9)
+            border 2px solid gris
+            text-align center
+            font-family Poiret One
+            font-size 0.9em
+            p
+                display block
+                margin 0 auto
+                width 50%
+                color white
+                line-height 20px
+                span
+                    margin-top 0%
+                    img
+                        width 100%
+                        height 30px
+                        display block
+            .p
+                width 100%
+                margin 0 auto
+                margin-top 5%    
+@media screen and (min-width: 768px)
+
+    #container
+        flex-flow row wrap
+        .titulo
+            h2
+                font-size 1.7em
+            h3
+                font-size 1.3em
+        .form
+            margin  -5% auto
+            .content
+                section
+                    margin-top 2%
+                .datos
+                    order 1
+                    border none
+                    margin-left 1%
+                    .inputs
+                        width 32%
+                        margin 0 0.3%auto
+                .servs
+                    order 2
+                    display flex
+                    flex-flow row wrap
+                    .servicios
+                        order 1
+                        flex 1 23%
+                        margin-left 10.3%
+                    .otros_servs
+                        order 2
+                        flex 1 23%
+                        margin-left 10.3%
+                    .idioma
+                        order 3
+                        flex 1 23%
+                        margin-left 10.3%
+                    b
+                        display block
+                        height 5px 
+                        margin-top 5%
+                        color main_color
+                        font-family Poiret One
+                        font-weight bold
+                        font-size 1.2em
+                    input
+                        font-size 2em
+                .miscelaneo
+                    flex 1 100%
+                    order 3
+                    .inputs
+                        width 49%
+                        margin-top 1%
+                        margin-left 0.5%
+                        input
+                            padding 3px
+                .bio_enviar
+                    flex 1 100%
+                    order 4
+                    .inputs
+                        margin-top 2%
+                    .boton
+                        width 40%
+                        margin-top 2%            
+        .redes-sociales
+            margin-bottom 0%
+            width 90%
+            height 100px
+            text-shadow 2px 1px 1px black
+            text-align center
+            a
+                display inline-block
+                background main_color
+                border-radius 50%
+                width 50px
+                height 50px
+                line-height 50px
+                margin 1%
+                border 2px solid gris
+                &:hover
+                    transition all 0.5s
+                    background fondo
+                    i 
+                        color main_color
+                i
+                    display inline-block
+                    font-style normal
+                    font-size 1.2em
+                    font-weight normal
+                    line-height 1
+                    -webkit-font-smoothing antialiased
+                    -moz-osx-font-smoothing grayscale
+                    color white
+    #foot
+        height 120px
+        font-size 1.1em
+        p
+            width 100%
+            span
+                display inline-block
+                padding 0px 2em
+                img
+                    width 100%
+        .p
+                margin-top 2%

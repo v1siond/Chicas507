@@ -1,0 +1,453 @@
+fondo   = #F5F6CE
+main_color  = #610B21
+letrah2 = white
+gris 	= #444
+
+@import url('http://fonts.googleapis.com/css?family=Overlock:400,700,400italic,700italic|Poiret One')
+@import url('http://fonts.googleapis.com/css?family=Overlock:400,700,400italic,700italic|Dancing Script')    
+@import url('http://fonts.googleapis.com/css?family=Overlock:400,700,400italic,700italic|Open Sans Condensed') 
+@import url('http://fonts.googleapis.com/css?family=Overlock:400,700,400italic,700italic|Athiti')
+
+@font-face 
+  font-family 'FontAwesome'
+  src url('../fonts/fontawesome-webfont.eot')
+  src url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+  font-weight normal
+  font-style normal
+  
+html 
+	width 100%
+	height 100%
+	margin 0 auto
+	padding 0 
+	background fondo
+body
+    width 100%
+    height 100%
+    margin 0 auto
+    padding 0 
+    max-width 1368px
+    .main_wrapper
+        width 100%
+        background fondo
+        display flex 
+        flex-direction column
+        .shadow
+            -moz-box-shadow    inset 0 0 10px #000000
+            -webkit-box-shadow inset 0 0 10px #000000
+            box-shadow         inset 0 0 10px #000000
+        .division
+            width 100%
+            height 3px
+        .flecha-down 
+            width 0px
+            height 0px
+            border-left 5px solid transparent 
+            border-right 5px solid transparent 
+            border-top 5px solid main_color
+            font-size 0px
+            line-height 0px
+            margin-left 0%
+        .flecha-down2
+            width 0px
+            height 0px
+            border-left 5px solid transparent 
+            border-right 5px solid transparent 
+            border-top 5px solid #F5F6CE
+            font-size 0px
+            line-height 0px
+	        ul
+	            list-style none
+	            margin 0
+	            padding 0
+	        li
+	            list-style none
+	            margin 0
+	            padding 0
+	        h2
+	            font-family Dancing Script
+	            color black
+	            font-weight bold
+	            text-align center
+	        h3               
+	            font-family Poiret One
+	            color #29220A
+	            font-weight bold
+	            text-align center
+            h4   
+                font-size 1.4em            
+                font-family Poiret One
+                color #29220A
+                font-weight bold  
+	        a
+	            text-decoration none
+	            font-family Poiret One
+	            font-weight bold
+	            text-shadow 2px 1px 1px black
+	            color white
+            blockquote
+                color black
+                font-size 1.4em
+                font-family Dancing Script
+                font-weight bold
+                text-align center
+                border none
+                border-bottom 1px solid main_color   
+        header
+            flex 1 100%
+            order 1
+            .main_header
+                position fixed
+                width 100%
+                z-index 1001
+                background fondo
+                .contenedor
+                    position relative
+                    width 100%
+                    height 65px
+                    max-width 1368px
+                    .barra-header
+                        width 40%
+                        margin-left 0%
+                        .logo-header
+                            display block
+                            width 100%
+                            margin 0 auto
+                            margin-top 9%
+                            margin-left 15%
+                            img
+                                width 70%
+                                height 40px
+                                margin-left 35%
+                    #resp-menu
+                        display none
+                    #resp-menu:checked ~ .menu-header
+                            transform translateX(0%)
+                    label
+                        position absolute
+                        top 25%
+                        right 15%
+                        cursor pointer
+                        color main_color
+                        font-size 2em  
+                    .fa fa-bars::before
+                        font-family FontAwesome
+                        content "\f0c9"
+                    .menu-header
+                        position absolute
+                        width 100%
+                        top 65px
+                        height 130px
+                        background rgba(fondo, 0.8)
+                        transform translateX(-100%)
+                        transition all 0.5s
+                        .submenu
+                            padding 5px
+                            background fondo
+                            &:hover
+                                transition all 0.5s
+                                background main_color
+                                a
+                                    border none
+                                    background main_color
+                                    color white
+                        .barra-menu
+                            width 100%
+                            display flex
+                            flex-direction column
+                            a
+                                font-weight bold
+                                font-size 0.9em
+                                font-family Athiti
+                                text-shadow none
+                                color main_color
+                                text-align left
+                                &:active
+                                    color gris
+                                &:hover
+                                    border-bottom 1px solid main_color
+                                    transition all 0.5s
+                                .flecha-down
+                                    position absolute
+                                    right 5%
+                            .dropdown1 
+                                width 100%
+                            .dropdown2 
+                                width 100%
+                            .dropdown3 
+                                width 100%
+                            .opcion
+                                width 100%
+        .container
+            flex 1 98% auto
+            order 2
+            margin-top 65px  
+            display flex 
+            flex-direction column
+            .division
+                flex 1 100%
+                position relative
+                .flecha-down
+                    position absolute
+                    width 100%
+                    left 0%
+                    .flecha-down2
+                        margin-left 50%
+            .mensaje
+                flex 1 100%
+                h2
+                    font-size 1.3em
+                h3
+                    margin-top 1%
+                    font-size 1em
+                    &::before
+                        content "- "
+                    &::after
+                        content " -"  
+            .terminos
+                flex 1 100%
+                margin 5% auto
+                .boton
+                    margin-left 70%
+                    width 30%
+                    Border 1px solid main_color
+                    background fondo
+                    text-align right
+                    &:hover
+                        background main_color
+                        transition all 0.55s
+                        a
+                            color fondo 
+                    a
+                        text-shadow none
+                        font-weight bold 
+                        color main_color
+                        i
+                            margin 0 5% auto
+                .nom_term
+                    width 100%
+                .des_term
+                    width 100%
+                    margin 3% auto
+                    display inline-block
+                    height 110px
+                    border-bottom 1px solid rgba(main_color, 0.3)
+                    img
+                        float left
+                        width 35%
+                        height 100px
+                    .post
+                        width 65%
+                        float right
+                        text-align justify 
+                        h4
+                            width 90%
+                            margin 0 auto 
+                            font-size 1em
+                        span
+                            display inline-block
+                            font-size 0.8em
+                        .fecha
+                            width auto 
+                            margin-left 5%
+                        p
+                            width 90%
+                            margin 8% auto 
+                            font-size 0.9em
+            .noticias_tweet
+                flex 2 100% 
+                .tweets
+                    width 100%
+                    margin auto 
+                    .post
+                        height 700px
+                        overflow scroll
+                        img
+                            display block
+                            width 90%
+                            height 300px
+                            margin 5% auto 
+                    .twitter
+                        width 100%
+                        margin 2% auto
+                        h4
+                            display inline-block
+                            font-size 1.8em 
+                        span
+                            display inline-block
+                            width 49%
+                            margin-left 0 auto 
+                            font-family Athiti
+                            font-size 1.1em
+                            font-weight bold
+                            text-align center
+                            strong
+                                margin-left 2%
+                                color main_color
+                            a
+                                color main_color
+                                text-shadow none
+                                font-family Athiti
+                                &:hover
+                                    border-bottom 1px solid rgba(main_color, 0.3)
+                                    transition all 0.55s
+                        #t
+                            text-align justify
+                .noticias
+                    width 90%
+                    margin 0 auto
+                    .titulo
+                        border-bottom 1px solid rgba(main_color, 0.3)
+                        h4
+                            font-size 1.2em
+                    .post1
+                        width auto
+                        height auto
+                        .content
+                            width 100%
+                            margin 5% auto
+                            display block
+                            border-bottom 1px solid rgba(main_color, 0.3)
+                            img
+                                width 100%
+                                height 200px
+                                margin 0 auto
+                            span
+                                display block 
+                                font-family Athiti
+                                margin-bottom 10%  
+        footer
+            flex 3 100%
+            order 3
+            background rgba(black, 0.9)
+            border 2px solid gris
+            text-align center
+            font-family Poiret One
+            font-size 0.9em
+            p
+                display block
+                margin 0 auto
+                width 50%
+                color white
+                line-height 20px
+                span
+                    margin-top 0%
+                    img
+                        width 100%
+                        height 30px
+                        display block
+            .p
+                width 100%
+                margin 0 auto
+                margin-top 5%                                  
+@media screen and (min-width: 768px)
+
+    #head
+        .main_header
+            .contenedor
+                .barra-header
+                    margin-top 0.8%
+                    margin-left 0%
+                    .logo-header
+                        margin-top 0%
+                        margin-left 15%
+                        img
+                            width 30%
+                            height 40px
+                            margin-left 0%
+                #resp-menu
+                    display none
+                label
+                    display none
+                .menu-header
+                    width 70%
+                    top 20%
+                    right 2%
+                    background none
+                    transform translateX(0%)
+                    .dropdown-menu
+                        margin 0 auto
+                        margin-top -78px
+                    .barra-menu
+                        width 100%
+                        display block
+                        a
+                            font-size 1em
+                            &:active
+                                color gris
+                            &:hover
+                                border-bottom 1px solid main_color
+                            .flecha-down
+                                position relative
+                                left 1%
+                        .dropdown1 
+                            width 14%
+                            display inline-block
+                            vertical-align top 
+                            text-align center 
+                        .dropdown2 
+                            width 14%
+                            display inline-block
+                            vertical-align top 
+                            text-align center 
+                        .dropdown3 
+                            width 14%
+                            display inline-block
+                            vertical-align top 
+                            text-align center 
+                        .opcion
+                            width 14%
+                            display inline-block
+                            vertical-align top 
+                            text-align center
+    #container
+        flex-flow row wrap
+        .mensaje
+            h2
+                font-size 1.7em
+            h3
+                font-size 1.3em
+        .terminos
+            flex 1 60%
+            order 1
+            .boton
+                margin-left 80%
+                width 15%
+                text-align center
+            .des_term
+                img
+                    float left
+                    width 20%
+                    height 100px
+                .post
+                    width 80%
+                    h4
+                        width 90%
+                        margin 0 auto 
+                        font-size 1em
+                    span
+                        display inline-block
+                        font-size 0.8em
+                    .fecha
+                        width auto 
+                        margin-left 5%
+                    p
+                        width 90%
+                        margin 5% auto 
+                        font-size 1em
+        .noticias_tweet
+            flex 2 40%
+            order 2
+            margin 5% auto
+    #foot
+        height 120px
+        font-size 1.1em
+        p
+            width 100%
+            span
+                display inline-block
+                padding 0px 2em
+                img
+                    width 100%
+        .p
+                margin-top 2%

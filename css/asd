@@ -1,0 +1,61 @@
+.modelos
+                            width 100%
+                            text-align center
+                            text-shadow 2px 1px 1px black
+                            .prepago
+                                margin 2% 1% auto
+                                width 48%
+                                background rgba(main_color, 0.8)
+                                float left
+                                .foto
+                                    width 100%
+                                    img
+                                        width 100%
+                                        height 180px
+                                    &:hover
+                                        opacity 0.4
+                                        transition all 0.55s
+                                .nombre
+                                    width 100%
+                                    margin-top 5%
+                                    margin-left 0%
+                                    font-size 1.2em
+                                    img
+                                        width 6%
+                                        margin-left 0%
+                                    &::before
+                                        content ""
+                                    &::after
+                                        content ""
+                                    a
+                                        font-family Dancing Script
+                                    .numero
+                                        &::before
+                                            content "| "
+                                            padding 0px 0.5em
+                                .descripcion
+                                    margin-top 0%
+                                    width 100%
+                                    .presentacion
+                                        width 95%
+                                        margin 0 auto
+                                        font-family Poiret One
+                                        font-size 0.8em
+                                        font-weight bold
+                                        color white
+                                    .valoracion
+                                        margin 0 auto
+                                        width 80%
+                                        height 25px
+                                    .zona
+                                        margin-bottom 1%
+                                        font-family Poiret One
+                                        font-size 0.8em
+                                        font-weight bold
+                                        color white
+                                        i 
+                                           font-size 1em
+                                           color white 
+                                    .fa-map-marker::before
+                                        font-family FontAwesome
+                                        content "\f041"

@@ -1,0 +1,1198 @@
+fondo   = #F5F6CE
+main_color  = #610B21
+letrah2 = white
+gris 	= #444
+
+@import url('http://fonts.googleapis.com/css?family=Overlock:400,700,400italic,700italic|Poiret One')
+@import url('http://fonts.googleapis.com/css?family=Overlock:400,700,400italic,700italic|Dancing Script')    
+@import url('http://fonts.googleapis.com/css?family=Overlock:400,700,400italic,700italic|Open Sans Condensed') 
+@import url('http://fonts.googleapis.com/css?family=Overlock:400,700,400italic,700italic|Athiti')
+
+@font-face 
+  font-family 'FontAwesome'
+  src url('../fonts/fontawesome-webfont.eot')
+  src url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+  font-weight normal
+  font-style normal
+
+
+*::-webkit-input-placeholder 
+    /* Google Chrome y Safari */
+    color main_color
+    font-weight bold
+    font-family Athiti
+    padding 5px
+*:-moz-placeholder 
+    /* Firefox anterior a 19 */
+    color main_color
+    font-weight bold
+    font-family Athiti
+    padding 5px
+*::-moz-placeholder 
+    /* Firefox 19 y superior */
+    color main_color
+    font-weight bold
+    font-family Athiti
+    padding 5px
+*:-ms-input-placeholder 
+    /* Internet Explorer 10 y superior */
+    color main_color
+    font-weight bold
+    font-family Athiti
+    padding 5px
+html 
+    width 100%
+    height 100%
+    margin 0 auto
+    padding 0 
+    background fondo
+    max-width 1368px
+body
+    width 100%
+    height 100%
+    margin 0 auto 
+    padding 0 
+    max-width 1368px
+    .main_wrapper
+        width 100%
+        height 100%
+        margin 0 auto
+        .shadow
+            -moz-box-shadow    inset 0 0 10px #000000
+            -webkit-box-shadow inset 0 0 10px #000000
+            box-shadow         inset 0 0 10px #000000
+        .division
+            width 100%
+            height 1px
+            background main_color
+        .flecha-down 
+            width 0px
+            height 0px
+            border-left 5px solid transparent 
+            border-right 5px solid transparent 
+            border-top 5px solid main_color
+            font-size 0px
+            line-height 0px
+            margin-left 0%
+        .flecha-down2
+            width 0px
+            height 0px
+            border-left 5px solid transparent 
+            border-right 5px solid transparent 
+            border-top 5px solid #F5F6CE
+            font-size 0px
+            line-height 0px
+        .dropdown-menu
+            width 30%
+        ul
+            list-style none
+            margin 0
+            padding 0
+        li
+            list-style none
+            margin 0
+            padding 0
+        h2
+            font-family Dancing Script
+            color black
+            font-weight bold
+            text-align center
+        h3               
+            font-family Poiret One
+            color #29220A
+            font-weight bold
+            text-align center
+            &::before
+                content "- "
+            &::after
+                content " -"    
+        a
+            text-decoration none
+            font-family Poiret One
+            font-weight bold
+            text-shadow 2px 1px 1px black
+            color white
+        i
+            font-family Dancing Script
+            font-size 2em
+            color main_color
+            font-weight bold
+        /* End of Global Settings */
+        header
+            width 100%
+            .main_header
+                position fixed
+                width 100%
+                z-index 1001
+                background fondo
+                .contenedor
+                    position relative
+                    width 100%
+                    height 65px
+                    max-width 1368px
+                    .barra-header
+                        width 40%
+                        margin-left 0%
+                        .logo-header
+                            display block
+                            width 100%
+                            margin 0 auto
+                            margin-top 9%
+                            margin-left 15%
+                            img
+                                width 70%
+                                height 40px
+                                margin-left 35%
+                    #resp-menu
+                        display none
+                    #resp-menu:checked ~ .menu-header
+                            transform translateX(0%)
+                    label
+                        position absolute
+                        top 25%
+                        right 15%
+                        cursor pointer
+                        color main_color
+                        font-size 2em  
+                    .fa fa-bars::before
+                        font-family FontAwesome
+                        content "\f0c9"
+                    .menu-header
+                        position absolute
+                        width 100%
+                        top 65px
+                        height 130px
+                        background rgba(fondo, 0.8)
+                        transform translateX(-100%)
+                        transition all 0.5s
+                        .submenu
+                            padding 5px
+                            background fondo
+                            &:hover
+                                transition all 0.5s
+                                background main_color
+                                a
+                                    border none
+                                    background main_color
+                                    color white
+                        .barra-menu
+                            width 100%
+                            display flex
+                            flex-direction column
+                            a
+                                font-weight bold
+                                font-size 0.9em
+                                font-family Athiti
+                                text-shadow none
+                                color main_color
+                                text-align left
+                                &:active
+                                    color gris
+                                &:hover
+                                    border-bottom 1px solid main_color
+                                    transition all 0.5s
+                                .flecha-down
+                                    position absolute
+                                    right 5%
+                            .opcion
+                                width 100%
+                            .dropdown1
+                                width 100%  
+                            .dropdown2
+                                width 100%  
+                            .dropdown3
+                                width 100%  
+        .main_container
+            width 100%
+            height 100%
+            margin 0 auto
+            padding 0 
+            .principal
+                position relative
+                display block
+                top 0%
+                width 100%
+                height 100%
+                color white
+                text-shadow 1px 1px 1px black
+                font-weight bold
+                background black
+                .slider
+                    position absolute
+                    top 0%
+                    width 100%
+                    height 100%
+                    .imagenes_sli
+                        width 100%
+                        height 100%
+                        margin-top 0%
+                        margin-left 0%
+                        animation 5s slider infinite
+                        img
+                            position absolute
+                            animation mm 15s infinite
+                            width 100%
+                            height 100%
+                            opacity 0
+                        @keyframes mm
+                            10%
+                                opacity 1
+                            25% 
+                                opacity 0
+
+                        img:nth-child(0) 
+                            animation-delay 0s	
+                        img:nth-child(1) 
+                            animation-delay 3s
+                        img:nth-child(2) 
+                            animation-delay 6s	
+                        img:nth-child(3) 
+                            animation-delay 9s	
+                        img:nth-child(4) 
+                            animation-delay 12s	
+                #chicas
+                    position absolute
+                    width 35%
+                    height 50px
+                    left 32.5%
+                    top 25%
+                #anuncio
+                    position absolute
+                    width 80%
+                    left 10%
+                    top 2%
+                    font-family Poiret One
+                    font-size 1.5em
+                    text-align center
+                    color white
+                .descripcion
+                    position absolute
+                    width 90%
+                    left 5%
+                    top 43%
+                    font-family Poiret One
+                    font-size 0.8em
+                    text-align justify
+                .terminos_condiciones
+                    position absolute
+                    width 90%
+                    left 5%
+                    top 85%
+                    font-family Athiti
+                    font-size 0.8em
+                    text-align center
+                .entrar_salir
+                    position absolute
+                    width 70%
+                    left 15%
+                    top 72%
+                    height 60px
+                    font-family Poiret One
+                    font-size 0.6em
+                    text-align center     
+                    .entrar
+                        float left
+                        margin 0 auto
+                        width 45%
+                        font-size 1.7em
+                        background rgba(main_color, 0.8)
+                        a
+                            display block
+                            text-shadow none
+                            color fondo
+                            padding 5px 0px
+                            border 1px fondo solid
+                            &:hover
+                                background fondo
+                                color main_color
+                                border 1px solid main_color
+                                transition all 0.5s
+                    .salir 
+                        margin 0 auto
+                        float right
+                        width 45%
+                        font-size 1.7em
+                        background rgba(main_color, 0.8)
+                        a
+                            display block
+                            text-shadow none
+                            color fondo
+                            padding 5px 0px
+                            border 1px fondo solid
+                            &:hover
+                                background fondo
+                                color main_color
+                                border 1px solid main_color
+                                transition all 0.5s
+            #secciones
+                width 100%
+                margin 2% auto
+                .comercio
+                    display block
+                    width 98%
+                    margin 0 auto
+                    text-align center
+                    .mensaje
+                        width 100%
+                        h2
+                            width 100%
+                            font-size 1.5em
+                        h3
+                            margin-top 0%                
+                            width 100%
+                            font-size 0.9em
+                    .division
+                        position relative
+                        width 100%
+                        margin 5% auto
+                        .flecha-down
+                            position absolute
+                            width 100%
+                            left 0%      
+                    .propa
+                        position relative
+                        margin-top 5%
+                        width 100%
+                        height 400px
+                        img
+                            width 100%
+                            height 200px
+                        .elige
+                            position relative
+                            width 100%
+                            height 200px
+                            .contrata
+                                position absolute
+                                top 70%
+                                left 25%
+                                width 50%
+                                border 1px solid fondo
+                                background rgba(main_color, 0.6)
+                                height 25px
+                                a
+                                    display block
+                                    margin-top 0%
+                                    text-shadow 0px 0px 0px
+                                    font-weight bold
+                                    color fondo
+                                    font-size 0.4em
+                                    padding 5px
+                                    &:hover
+                                        background fondo
+                                        color main_color
+                                        border 1px solid main_color
+                                        transition all 0.5s
+                        .unete
+                            position relative
+                            width 100%
+                            height 100px
+                            font-size 0.5em
+                            .registrate
+                                position absolute
+                                left 25%
+                                top 140%
+                                width 50%
+                                border 1px solid fondo
+                                background rgba(main_color, 0.6)
+                                height 25px
+                                a
+                                    display block
+                                    margin-top 0%
+                                    text-shadow 0px 0px 0px
+                                    font-weight bold
+                                    font-size 0.4em
+                                    color fondo 
+                                    padding 5px     
+                                    &:hover
+                                        background fondo
+                                        color main_color
+                                        border 1px solid main_color 
+                                        transition all 0.5s
+                .galeria
+                    margin 2% auto
+                    width 98%
+                    .presentacion
+                        width 100%
+                        h2
+                            width 100%
+                            font-size 1.5em
+                        h3
+                            margin-top 0%                
+                            width 100%
+                            font-size 0.9em
+                    .division
+                        position relative
+                        width 100%
+                        margin 5% auto
+                        text-align center
+                        .flecha-down
+                            position absolute
+                            width 100%
+                            left 0%
+                    .filtro
+                        width 100%
+                        margin-top 5%
+                        text-align center
+                        .filtro_nav
+                            margin auto
+                            width 100%
+                            .dropdown
+                                position relative
+                                width 100%
+                                background rgba(main_color, 0.9)
+                                font-size 0.8em
+                                &:hover
+                                    transition all 0.5s
+                                    .dropdown-content
+                                        display block
+                                .dropdown-content
+                                    width 100%
+                                    background rgba(main_color, 0.9)
+                                    color white
+                                    text-shadow 2px 1px 1px black
+                                    font-family Poiret One
+                                    font-size 0.8em
+                                    font-weight bold
+                                    display none
+                                    .filter
+                                        cursor pointer
+                    .damas        
+                        .modelos                           
+                            .prepago
+                                display inline-block
+                                width 49%
+                                margin-top 1%
+                                margin-left 0.3%
+                                background rgba(main_color, 0.8)
+                                height 320px
+                                vertical-align top
+                                text-align center
+                                .panel_modelo
+                                    width 100%
+                                    .foto
+                                        img
+                                            width 100% 
+                                            height 180px
+                                            &:hover
+                                                opacity 0.4
+                                                transition all 0.55s  
+                                    .nombre
+                                        width 100%
+                                        margin 2% auto
+                                        font-size 1.1em
+                                        img
+                                            width 8%
+                                        &::before
+                                            content ""
+                                        &::after
+                                            content ""
+                                        a
+                                            font-family Dancing Script
+                                        .numero
+                                            &::before
+                                                content "| "
+                                                padding 0px 0.5em
+                                    .descripcion
+                                        margin 0 auto
+                                        width 100%
+                                        .presentacion
+                                            width 95%
+                                            margin 0 auto
+                                            font-family Poiret One
+                                            font-size 0.8em
+                                            font-weight bold
+                                            color white
+                                        .valoracion
+                                            margin 0 auto
+                                            width 80%
+                                            height 20px
+                                            background url(../imagenes/estrellas.png) 0 0 no-repeat
+                                        .zona
+                                            font-family Poiret One
+                                            font-size 0.8em
+                                            font-weight bold
+                                            color white
+                                            i 
+                                               font-size 1em
+                                               color white 
+                                        .fa-map-marker::before
+                                            font-family FontAwesome
+                                            content "\f041"          
+                .blog
+                    margin 2% auto
+                    width 98%
+                    .mensaje
+                        width 100%
+                        h2
+                            width 100%
+                            font-size 1.3em
+                        h3
+                            margin-top 0%                 
+                            width 100%
+                            font-size 0.9em
+                    .division
+                        margin 5% auto
+                        position relative
+                        width 100%
+                        text-align center
+                        .flecha-down
+                            position absolute
+                            width 100%
+                            left 0%
+                    .entrada
+                        display inline-block
+                        margin 2% auto
+                        width 100%
+                        .img_entrada
+                            width 100%
+                            height 225px
+                            img
+                                width 100%
+                                height 225px
+                        .post
+                            width 100%
+                            .titulo
+                                margin 0 auto
+                                text-align left
+                                font-size 1.2em
+                                height 40px
+                                text-align center
+                                &::before
+                                    content ""
+                                &::after
+                                    content ""
+                            .fecha_entrada
+                                font-family Athiti
+                                font-weight bold
+                                font-size 0.9em
+                                height 20px
+                                text-align center
+                            .contenido
+                                width 95%
+                                margin 0 auto
+                                font-family Poiret One
+                                font-weight bold
+                                font-size 1em
+                                text-align justify
+                                p
+                                    line-height 1.1em
+                            .leer
+                                width 100%
+                                .leeme
+                                    padding 5px 0px
+                                    display block
+                                    text-align center
+                                    width 100%
+                                    border 1px solid main_color
+                                    background rgba(main_color, 0.8)
+                                    &:hover
+                                        text-shadow none
+                                        text-weight bold
+                                        color main_color
+                                        background rgba(fondo, 0.8)
+                                        transition all 0.55s      
+                .ofertas
+                    margin 1% auto
+                    width 98%
+                    text-align center
+                    .mensaje
+                        width 100%
+                        h2
+                            width 100%
+                            font-size 1.3em
+                        h3
+                            margin-top 0%                 
+                            width 100%
+                            font-size 0.9em
+                    .division
+                        position relative
+                        width 100%
+                        margin 5% auto
+                        text-align center
+                        .flecha-down
+                            position absolute
+                            width 100%
+                            left 0%
+                    .paquetes
+                        margin 0 auto
+                        margin-top 5%
+                        width 100%
+                        height 175px
+                        text-shadow 2px 1px 1px black
+                        border-top-color rgba(main_color, 0.4)
+                        border-top-style solid
+                        #paquete_oferta
+                            width 100%
+                            #nom_paq
+                                font-family Dancing Script
+                                font-size 1.5em
+                                font-weight bold
+                                color white
+                                height 60px
+                                padding 10px
+                                background rgba(main_color, 0.9)
+                                display block
+                            #precio_paq
+                                font-family Dancing Script
+                                font-size 1.5em
+                                font-weight bold
+                                color white
+                                height 60px
+                                padding 10px
+                                background rgba(main_color, 0.8)
+                                display block
+                            #boton
+                                height 65px
+                                padding 10px
+                                display block
+                                a
+                                    display block
+                                    width 40%
+                                    margin 0 auto
+                                    padding 10px
+                                    background rgba(main_color, 0.9)
+                                    text-shadow 2px 1px 1px black
+                                    font-weight bold
+                                    &:hover
+                                        text-shadow none
+                                        background fondo
+                                        color main_color
+                                        border 1px solid main_color 
+                                        font-weight bold 
+                                        transition all 0.5s
+                        li
+                            font-family Poiret One
+                            font-weight bold
+                            font-size 1em
+                            background rgba(main_color, 0.4)
+                            padding 4px
+                            height 20px
+                            border 1px solid white
+                            color white
+                            display none
+                    .propa
+                        width 95%
+                        margin 0 auto
+                        margin-top 5%
+                        height 200px
+                        border-left-color rgba(main_color, 0.4)
+                        border-left-style solid
+                        border-right-color rgba(main_color, 0.4)
+                        border-right-style solid
+                        p
+                            width 95%
+                            margin 0 auto
+                            font-family Athiti
+                            font-weight bold
+                            font-size 0.75em
+                            color main_color
+                            line-height 1.3em
+                            text-align justify
+                        
+                .comentarios
+                    margin 2% auto
+                    width 98%
+                    text-align center
+                    .mensaje
+                        width 100%
+                        h2
+                            width 100%
+                            font-size 1.3em
+                        h3
+                            margin-top 0%                 
+                            width 100%
+                            font-size 0.9em
+                    .division
+                        margin 5% auto
+                        position relative
+                        width 100%
+                        text-align center
+                        .flecha-down
+                            position absolute
+                            width 100%
+                            left 0%
+                    .sli_coment
+                        position relative
+                        margin-top 5%
+                        width 100%
+                        height 80px
+                        blockquote
+                            display block
+                            margin 0 auto
+                            width 100%
+                            color #29220A
+                            font-size 0.8em
+                            border-left none
+                            border-left-color rgba(main_color, 0.4)
+                            border-left-style solid
+                            border-right-color rgba(main_color, 0.4)
+                            border-right-style solid
+                            strong
+                                color main_color
+                            small
+                                margin-top 2%
+                                display block
+                                color main_color
+                .contacto
+                    position relative
+                    margin 2% auto
+                    width 98%
+                    text-align center
+                    .mensaje
+                        width 100%
+                        h2
+                            width 100%
+                            font-size 1.3em
+                        h3
+                            margin-top 0%               
+                            width 100%
+                            font-size 0.9em
+                    .division
+                        margin 5% auto
+                        position relative
+                        width 100%
+                        text-align center
+                        .flecha-down
+                            position absolute
+                            width 100%
+                            left 0%
+                    .form_contact
+                        margin 0 auto
+                        margin-top 5%
+                        width 90%
+                        input
+                            margin-top 0.1%
+                            width 100%
+                            padding 10px
+                            font-weight bold
+                            font-family Poiret One
+                        textarea
+                            margin-top 0%
+                            min-width 100%
+                            max-width 100%
+                            min-height 140px
+                            max-height 140px
+                            &::-webkit-input-placeholder 
+                                padding 5px 13px
+                            &:-moz-placeholder 
+                                padding 5px 13px
+                            &::-moz-placeholder 
+                                padding 5px 13px
+                            &:-ms-input-placeholder 
+                                padding 5px 13px  
+                        #boton
+                            width 50%
+                            margin 0 auto
+                            background rgba(main_color, 0.9)
+                            color white
+                            text-shadow 2px 1px 1px black
+                            cursor pointer
+                            z-index 40
+                            &:hover
+                                background fondo
+                                color main_color
+                                border 1px solid main_color 
+                                text-shadow none
+                                transition all 0.5s
+                                 
+                    .redes-sociales
+                        margin 5% auto 
+                        width 80%
+                        height 100px
+                        text-shadow 2px 1px 1px black
+                        a
+                            display inline-block
+                            background main_color
+                            border-radius 50%
+                            width 20%
+                            height 60px
+                            line-height 60px
+                            margin 1%
+                            border 2px solid gris
+                            &:hover
+                                transition all 0.5s
+                                background fondo
+                                i 
+                                    color main_color
+                            i
+                                display inline-block
+                                font-style normal
+                                font-size 1.2em
+                                font-weight normal
+                                line-height 1
+                                -webkit-font-smoothing antialiased
+                                -moz-osx-font-smoothing grayscale
+                                color white
+                            .fa-facebook::before
+                                font-family FontAwesome
+                                content "\f09a"
+                            .fa-twitter::before
+                                font-family FontAwesome
+                                content "\f099"
+                            .fa-phone::before
+                                font-family FontAwesome
+                                content "\f095"
+                            .fa-google-plus::before
+                                font-family FontAwesome
+                                content "\f0d5"
+            footer
+                height 150px
+                width 100%
+                background rgba(black, 0.9)
+                border 2px solid gris
+                text-align center
+                font-family Poiret One
+                font-size 0.9em
+                p
+                    display block
+                    margin 0 auto
+                    width 50%
+                    color white
+                    line-height 20px
+                    span
+                        margin-top 0%
+                        img
+                            width 100%
+                            height 30px
+                            display block
+                .p
+                    width 100%
+                    margin 0 auto
+                    margin-top 5%
+           
+@media screen and (min-width: 768px)
+
+    #head
+        .main_header
+            .contenedor
+                .barra-header
+                    margin-top 0.8%
+                    margin-left 0%
+                    .logo-header
+                        margin-top 0%
+                        margin-left 15%
+                        img
+                            width 30%
+                            height 40px
+                            margin-left 0%
+                #resp-menu
+                    display none
+                label
+                    display none
+                .menu-header
+                    width 70%
+                    top 20%
+                    right 2%
+                    background none
+                    transform translateX(0%)
+                    .dropdown-menu
+                        margin 0 auto
+                        margin-top -78px
+                    .barra-menu
+                        width 100%
+                        display block
+                        a
+                            font-size 1em
+                            &:active
+                                color gris
+                            &:hover
+                                border-bottom 1px solid main_color
+                            .flecha-down
+                                position relative
+                                left 1%
+                        .dropdown1 
+                            width 14%
+                            display inline-block
+                            vertical-align top 
+                            text-align center 
+                        .dropdown2 
+                            width 14%
+                            display inline-block
+                            vertical-align top 
+                            text-align center 
+                        .dropdown3 
+                            width 14%
+                            display inline-block
+                            vertical-align top 
+                            text-align center 
+                        .opcion
+                            width 14%
+                            display inline-block
+                            vertical-align top 
+                            text-align center 
+    .main_container
+        #principal
+            #chicas
+                width 25%
+                height 160px
+                left 37.5%
+                top 28%
+            #anuncio
+                width 50%
+                left 25%
+                top 10%
+                font-size 2em
+            .descripcion
+                width 80%
+                left 10%
+                top 55%
+                font-size 1.4em
+            .terminos_condiciones
+                width 90%
+                left 5%
+                top 92%
+                font-size 1em
+            .entrar_salir
+                width 50%
+                left 25%
+                top 80%
+                height 40px
+                .entrar
+                    font-size 2.5em
+                .salir 
+                    font-size 2.5em
+        #secciones
+            #comercio
+                margin 5% auto
+                .mensaje
+                    h2
+                        font-size 2.3em
+                    h3               
+                        font-size 1.5em   
+                .propa
+                    margin-top 5%
+                    width 100%
+                    height 400px
+                    img
+                        border 2px solid main_color
+                        width 100%
+                        height 380px
+                    .elige
+                        float right
+                        width 50%
+                        .contrata
+                            top 145%
+                            height 30px
+                            a
+                                font-size 0.5em
+                    .unete
+                        float left
+                        width 50%
+                        .registrate
+                            top 290%
+                            height 30px
+                            a
+                                font-size 0.5em
+            #galeria
+                margin 5% auto
+                .presentacion
+                    h2
+                        height 30px
+                        font-size 2.5em
+                    h3
+                        height 50px                  
+                        font-size 1.5em
+                .filtro
+                    width 100%
+                    margin-top 5%
+                    text-align center
+                    .filtro_nav
+                        margin-left 0.55%
+                        width 100%
+                        .dropdown
+                            width 16.52%
+                            float left
+                            font-size 1.1em
+                            &:hover
+                                .dropdown-content
+                                    display block
+                            .dropdown-content
+                                position absolute
+                                width 100%
+                                font-size 0.8em        
+                .modelos
+                    margin-top 10%
+                    width 100%
+                    .prepago
+                        margin-top 2%
+                        margin-left 0.3%
+                        margin-right 0.3%
+                        width 24%
+                        height 430px
+                        border 1px solid main_color
+                        .foto
+                            img
+                                width 100%
+                                height 250px
+                        .nombre
+                            margin-top 0%
+                            font-size 1.3em
+                            height 20px
+                        .descripcion
+                            .presentacion
+                                height 70px
+                                font-size 1em
+                            .valoracion
+                                margin 0 auto
+                                width 80%
+                                height 55px
+                            .zona
+                                margin-bottom 0%
+                                font-size 0.9em                               
+            #blog
+                margin 5% auto
+                .mensaje
+                    h2
+                        height 60px
+                        font-size 2.3em
+                    h3
+                        height 70px                  
+                        font-size 1.5em
+                .entrada
+                    width 49%
+                    margin-left 0.5%
+                    display inline-block
+                    .img_entrada
+                        float left
+                        width 30%
+                        height 252px
+                        img
+                            width 100%
+                            height 252px
+                    .post
+                        height 225px
+                        width 68%
+                        float right
+                        .titulo
+                            height 60px
+                            font-size 1.3em
+                        .fecha_entrada
+                            font-size 0.8em
+                        .contenido
+                            height 140px
+                            font-size 1em
+                        .leer
+                            margin 0 auto
+                            width 95%
+                            .leeme
+                                padding 5px 0          
+            #ofertas
+                margin 5% auto
+                .mensaje
+                    h2
+                        font-size 2.3em
+                    h3                
+                        font-size 1.5em
+                .paquetes
+                    width 30%
+                    height 460px
+                    margin-left 1.3%
+                    display inline-block
+                    #paquete_oferta
+                        #nom_paq
+                            font-size 1.9em
+                            height 80px
+                            padding 20px
+                        #precio_paq
+                            font-size 1.7em
+                            height 80px
+                            padding 25px
+                        #boton
+                            height 90px
+                            padding 15px
+                            a
+                                width 80%
+                                font-size 1em
+                                padding 15px
+                    li
+                        width 100%
+                        font-size 1.3em
+                        padding 8px
+                        height 40px
+                        display block
+                .propa
+                    height 120px
+                    p
+                        font-size 0.8em
+                    
+            #comentarios
+                margin 5% auto
+                .mensaje
+                    h2
+                        font-size 2.3em
+                    h3                
+                        font-size 1.5em
+                .sli_coment
+                    margin-top 5%
+                    height 80px
+                    blockquote
+                        font-size 1em
+            #contacto
+                margin 5% auto
+                .fondo
+                .mensaje
+                    h2
+                        font-size 2.3em
+                    h3                
+                        font-size 1.5em
+                .form_contact
+                    position relative
+                    margin-top 3%
+                    width 100%
+                    &::after
+                        content ""
+                        background url(../imagenes/slider5.jpg);
+                        opacity 0.2
+                        top 0
+                        left 0
+                        bottom 0
+                        right 0
+                        position absolute
+                        z-index -1
+                    form 
+                        position relative
+                        margin-top 2%
+                        input
+                            display block
+                            margin-left 4%
+                            width 30%
+                            padding 11.7px 1.5em
+                        textarea
+                            position absolute
+                            top 0%
+                            right 4%
+                            min-width 60%
+                            max-width 60%
+                            min-height 185px
+                            max-height 185px
+                            &::-webkit-input-placeholder 
+                                padding 5px 15px
+                            &:-moz-placeholder 
+                                padding 5px 15px
+                            &::-moz-placeholder 
+                                padding 5px 15px
+                            &:-ms-input-placeholder 
+                                padding 5px 15px  
+                        #boton
+                            width 50%
+                            margin 0 auto
+                            margin-top 2%
+                            font-size 1.5em
+                            padding 10px
+                .redes-sociales
+                    a
+                        width 7%
+                        height 60px
+                        line-height 60px
+        #foot
+            height 120px
+            font-size 1.1em
+            p
+                width 100%
+                span
+                    display inline-block
+                    padding 0px 2em
+                    img
+                        width 100%
+            .p
+                margin-top 2%
