@@ -21,9 +21,12 @@
 			<section class="videos-container">
 				<?php if (isset($videos)): ?>
 					<?php foreach ($videos as $video): ?>
-						<video class="home-background" controls poster="<?php foreach ($fotos_model as $poster): echo route_images . $poster['foto']; break;?>
-						<?php endforeach ?>">
+						<video class="home-background" controls>
 							<source src="<?php echo route_videos . $video['video']?>" type="video/mp4">
+							<source src="<?php echo route_videos . $video['video']?>" type="video/flv">
+							<source src="<?php echo route_videos . $video['video']?>" type="video/webm">
+							<source src="<?php echo route_videos . $video['video']?>" type="video/ogg">
+							<source src="<?php echo route_videos . $video['video']?>" type="video/3gp">
 						</video>
 					<?php endforeach ?>
 				<?php endif ?>

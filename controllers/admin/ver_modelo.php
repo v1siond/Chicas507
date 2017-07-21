@@ -352,6 +352,9 @@
             ':foto' => $img[$c],
             ':id' => $user_id
             ));
+        }else {
+          echo '<script language="javascript">alert("Formato de Archivo No Soportado");</script>';
+          header('Refresh: 1; url=' . route_ver_modelo_admin . '?id=' . $user_id);
         }
         $c++;
       }
@@ -379,7 +382,7 @@
 
       $type = pathinfo($archivo_subido, PATHINFO_EXTENSION);
 
-      if ($type != 'mp4' && $type != 'flv' && $type != 'avi' && $type != 'mpeg' && $type != '3gp') {
+      if ($type != 'mp4' && $type != 'flv' && $type != 'webm' && $type != 'ogg' && $type != '3gp') {
         echo '<script language="javascript">alert("Formato de Archivo No Soportado");</script>';
         header('Refresh: 1; url=' . route_admin);
       }else{
