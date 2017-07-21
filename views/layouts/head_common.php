@@ -6,7 +6,7 @@
   });
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="Description" content="Prostituas, damas de Compañía y prepagos en Panamá. Bienvenido a Chicas 507, aquí encontraras los mejores anuncios de prostituas y prepagos de Panamá.">
+<meta name="Description" content="Escorts, damas de compañía y prepagos en Panamá. Bienvenido a Chicas 507, aquí encontraras los mejores anuncios de prostituas y prepagos de Panamá.">
 <meta name="keywords" content="putas panama, prepagos panama, escort panama, contactos eroticos panama, anuncios eroticos panama, putas chicas507, prepagos chicas507, damas de compañia panama">
 <meta name="author" content="Chicas507 en Panama">
 <title>Prostitutas y Prepagos en Panamá | Chicas507.com</title>
