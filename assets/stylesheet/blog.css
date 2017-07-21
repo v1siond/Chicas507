@@ -1,0 +1,113 @@
+.disabled {
+  Background: #fff;
+  display: inline-block;
+  cursor: not-allowed;
+  color: rgba(0,0,0,0.4);
+  text-decoration: none;
+}
+#container {
+  width: 100%;
+  margin: auto;
+}
+#container #entrad {
+  width: 95%;
+  margin: 2% auto;
+  margin-left: 2.5%;
+}
+#container #entrad #imagen img {
+  width: 100%;
+  height: auto;
+}
+#container #entrad #contenido {
+  padding: 0;
+}
+#container #entrad #contenido h4,
+#container #entrad #contenido span,
+#container #entrad #contenido p {
+  width: 95%;
+  margin: auto;
+}
+#container #entrad #contenido h4 {
+  margin-top: 0%;
+  color: #000;
+  font-family: Droid;
+  font-weight: bold;
+  font-size: 23px;
+  font-size: 2.3rem;
+}
+#container #entrad #contenido span {
+  display: block;
+  margin-top: 2%;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+#container #entrad #contenido p {
+  margin-top: 2%;
+  text-align: justify;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+#container #entrad #boton {
+  width: 100%;
+  border: 1px solid #000;
+  margin: 2% auto;
+  padding: 0;
+}
+#container #entrad #boton a {
+  display: block;
+  padding: 5px;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+#container #entrad #boton a:hover {
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+  transition: all 0.55s;
+}
+#container #paginacion ul li {
+  display: inline-block;
+  padding: 5px 5px;
+}
+#container #paginacion ul i {
+  padding: 5px;
+}
+@media only screen and (max-device-width: 767px) {
+  #container #entrad #contenido h4 {
+    margin: 2% auto;
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+  #container #entrad #contenido p {
+    width: 98%;
+    margin: auto;
+    margin-top: 2%;
+    text-align: justify;
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-device-width: 1441px) {
+  #container #entrad #contenido h4 {
+    font-size: 30px;
+    font-size: 3rem;
+  }
+  #container #entrad #contenido span {
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+  #container #entrad #contenido p {
+    font-size: 25px;
+    font-size: 2.5rem;
+  }
+  #container #paginacion ul li {
+    font-size: 25px;
+    font-size: 2.5rem;
+  }
+  #container #paginacion ul a {
+    font-size: 25px;
+    font-size: 2.5rem;
+  }
+}

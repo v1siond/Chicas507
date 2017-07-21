@@ -1,0 +1,107 @@
+letras  = black
+main_color  = white
+.disabled
+    Background main_color
+    display inline-block
+    cursor not-allowed
+    color rgba(letras, 0.4)
+    text-decoration none
+#container
+	width 100%
+	margin auto
+	#entrad
+		width 95%
+		margin 2% auto
+		margin-left 2.5%
+		#imagen
+			img
+				width 100%
+				height auto
+		#contenido
+			padding 0
+			h4,
+			span,
+			p 
+				width 95%
+				margin auto
+			h4
+				margin-top 0%
+				color letras
+				font-family Droid
+				font-weight bold
+				font-size 23px
+				font-size 2.3rem
+			span
+				display block
+				margin-top 2%
+				font-size 14px
+				font-size 1.4rem
+			p
+				margin-top 2%
+				text-align justify
+				font-size 18px
+				font-size 1.8rem
+		#boton
+			width 100%
+			border 1px solid letras
+			margin 2% auto
+			padding 0
+			a
+				display block
+				padding 5px
+				width 100%
+				background letras
+				color main_color
+				border 1px solid main_color
+				&:hover
+					background main_color
+					color letras
+					border 1px solid letras
+					transition all 0.55s
+	#paginacion
+		ul
+			li
+				display inline-block
+				padding 5px 5px
+			i
+				padding 5px
+
+@media only screen and (max-device-width: 767px)
+
+	#container
+		#entrad
+			#contenido
+				h4
+					margin 2% auto
+					font-size 18px
+					font-size 1.8rem
+				p
+					width 98%
+					margin auto
+					margin-top 2%
+					text-align justify
+					font-size 14px
+					font-size 1.4rem
+				
+@media only screen and (min-device-width: 1441px)	
+
+	#container
+		#entrad
+			#contenido
+				h4
+					font-size 30px
+					font-size 3rem
+				span
+					font-size 18px
+					font-size 1.8rem
+				p
+					font-size 25px
+					font-size 2.5rem
+		#paginacion
+			ul
+				li
+					font-size 25px
+					font-size 2.5rem
+				a
+					font-size 25px
+					font-size 2.5rem

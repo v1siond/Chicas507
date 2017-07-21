@@ -1,0 +1,34 @@
+.inner-section
+	padding 2rem 1rem
+	&.-center
+		text-align center
+	&.-left
+		text-align left
+	&.-flex
+		align-items flex-start
+		align-content flex-start
+		around_flex()
+	> .subtitle
+		color cruel_love
+		margin 1rem auto;
+		text-align center
+		width 100%
+	> .dato,
+	> .servicio
+		around_flex()
+		list-style none
+		padding 1rem
+		p
+			display inline-block
+			float none
+			margin-bottom 0
+			padding 0
+	> .dato
+		border-bottom .05rem solid rgba(black, .15)
+		&:last-child
+			border none
+	> .servicio
+		display inline-block
+		padding 0 .5rem
+	> .texto
+		margin 2rem auto

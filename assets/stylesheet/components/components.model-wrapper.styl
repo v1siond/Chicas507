@@ -1,0 +1,38 @@
+.model-wrapper
+	margin-bottom 2rem
+	> .model
+		display inline-block
+		overflow hidden
+		position relative
+		&:before
+			background rgba(cruel_love, .4)
+			content ''
+			height 100%
+			left 0
+			opacity 0
+			position absolute
+			top 0
+			transition all .5s
+			width 100%
+			z-index 1
+		&:after
+			bottom -5rem
+			color main_color
+			content '+'
+			display inline-block
+			font-family Droid
+			font-size 5rem
+			font-weight 300
+			position absolute
+			text-align center
+			transition all .5s
+			width 100%
+			z-index 2
+		&:hover
+			.model-picture
+				transform scale(1.1)
+			&:before
+				display block
+				opacity 1
+			&:after
+				bottom 18.5rem

@@ -1,0 +1,28 @@
+.default-button
+	border .1rem solid main_color
+	color main_color
+	display inline-block
+	font-family Droid
+	font-size: 1.5rem
+	padding 1rem
+	text-align center
+	text-decoration none
+	text-transform uppercase
+	transition all .5s
+	&:hover
+		background white
+		color letras
+		text-decoration none
+	&.-black
+		background letras
+		color main_color
+		&:hover
+			border .1rem solid letras
+			background main_color
+			color letras
+	&.-inverted
+		border .1rem solid letras
+		color letras
+		&:hover
+			background letras
+			color main_color

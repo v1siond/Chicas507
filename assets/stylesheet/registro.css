@@ -1,0 +1,187 @@
+#container {
+  width: 100%;
+}
+#container h4 {
+  font-family: Droid;
+  font-weight: bold;
+  color: #000;
+}
+#container *::-webkit-input-placeholder {
+/* Google Chrome y Safari */
+  color: #000;
+  font-weight: bold;
+  font-family: Droid;
+  padding: 5px;
+}
+#container *:-moz-placeholder {
+/* Firefox anterior a 19 */
+  color: #000;
+  font-weight: bold;
+  font-family: Droid;
+  padding: 5px;
+}
+#container *::-moz-placeholder {
+/* Firefox 19 y superior */
+  color: #000;
+  font-weight: bold;
+  font-family: Droid;
+  padding: 5px;
+}
+#container *:-ms-input-placeholder {
+/* Internet Explorer 10 y superior */
+  color: #000;
+  font-weight: bold;
+  font-family: Droid;
+  padding: 5px;
+}
+#container #registro {
+  margin: 2% auto;
+}
+#container #registro .formulario {
+  width: 90%;
+  margin: auto;
+}
+#container #registro .formulario h4 {
+  font-size: 30px;
+  font-size: 3rem;
+}
+#container #registro .formulario p {
+  margin: 2% auto;
+}
+#container #registro .formulario .row {
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+#container #registro .formulario .row input,
+#container #registro .formulario .row button {
+  border-radius: 0%;
+}
+#container #registro .formulario .row input {
+  height: 40px;
+  background: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+#container #registro .formulario .row #datos,
+#container #registro .formulario .row #email,
+#container #registro .formulario .row #boton {
+  margin: 1% auto;
+}
+#container #registro .formulario .row button {
+  margin: 1% auto;
+  width: 100%;
+  background: #000;
+  border: 1px solid #fff;
+  color: #fff;
+}
+#container #registro .formulario .row button:hover {
+  background: #fff;
+  border: 1px solid #000;
+  color: #000;
+  transition: all 0.55s;
+}
+#container #registro .content {
+  margin: 2% auto;
+  width: 90%;
+  border-top: 1px solid #000;
+}
+#container #registro .content h4,
+#container #registro .content p {
+  margin: 2% auto;
+}
+#container #registro .content a {
+  text-decoration: none;
+  color: #000;
+}
+#container #registro .content a:hover {
+  color: #fff;
+  transition: all 0.55s;
+}
+#container #condiciones {
+  margin: 2% auto;
+}
+#container #condiciones #condi {
+  width: 90%;
+  margin: auto;
+}
+#container #condiciones #condi h4 {
+  font-size: 30px;
+  font-size: 3rem;
+  text-align: center;
+}
+#container #condiciones #condi p {
+  margin: 2% auto;
+}
+#container #condiciones #leer {
+  width: 90%;
+  margin: 2% auto;
+  text-align: center;
+  border: 1px solid #000;
+}
+#container #condiciones #leer a {
+  display: block;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px;
+  border: 1px solid #fff;
+}
+#container #condiciones #leer a:hover {
+  background: #fff;
+  border: 1px solid #000;
+  color: #000;
+  transition: all 0.55s;
+}
+@media only screen and (max-device-width: 767px) {
+  #container #mensaje h2 {
+    font-size: 25px;
+    font-size: 2.5rem;
+  }
+  #container #mensaje h3 {
+    font-size: 20px;
+    font-size: 2rem;
+  }
+  #container #registro .formulario h4 {
+    font-size: 20px;
+    font-size: 2rem;
+  }
+  #container #registro .content h4 {
+    text-align: center;
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+  #container #condiciones #condi h4 {
+    font-size: 20px;
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-device-width: 1441px) {
+  #container p {
+    font-size: 20px;
+    font-size: 2rem;
+  }
+  #container #mensaje h2 {
+    font-size: 40px;
+    font-size: 4rem;
+  }
+  #container #mensaje h3 {
+    font-size: 32px;
+    font-size: 3.2rem;
+  }
+  #container #registro .formulario h4 {
+    font-size: 32px;
+    font-size: 3.2rem;
+  }
+  #container #registro .content h4 {
+    text-align: center;
+    font-size: 25px;
+    font-size: 2.5rem;
+  }
+  #container #condiciones #condi h4 {
+    font-size: 32px;
+    font-size: 3.2rem;
+  }
+}

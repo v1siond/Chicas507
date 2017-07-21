@@ -1,0 +1,23 @@
+.blog-pagination
+	horizontal_centered_flex()
+	padding 1.5rem 0
+	> .arrow,
+	> .page
+		color cruel_love
+		font-size 1.5rem
+		list-style none
+		margin-right 1rem
+		transition all .5s
+		&.disable
+			color rgba(cruel_love, .5)
+	> .page
+		border .1rem solid cruel_love
+		border-radius 50%
+		> a,
+		&.disable
+			padding 0 .6rem
+			&:hover
+				background-color cruel_love
+				color main_color
+	>	.arrow > a:hover
+				transform scale(1.05)

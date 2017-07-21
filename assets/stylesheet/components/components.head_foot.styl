@@ -1,0 +1,173 @@
+color = black
+main_color  = white
+
+#head
+	position fixed
+	width 100%
+	top 0
+	background-color color
+	z-index 99
+	-moz-box-shadow 0 1px 5px black
+	-webkit-box-shadow 0 1px 5px black
+	box-shadow 0 1px 5px black
+	.container
+		display flex
+		justify-content center
+		width 100%
+		position relative
+		#resp-menu, #bar-menu
+			display none
+		> .row
+			display flex
+			padding 15px
+			align-items center
+			justify-content space-around
+			width 100%
+			> .col-xs-3
+				max-width: 25rem
+				@media only screen and (min-device-width: 1440px)
+					max-width 40rem
+		article
+			#main_logo
+				width 100%
+				margin 0 auto
+				border-bottom 1px solid main_color
+				border-top 1px solid main_color
+				color main_color
+				display block
+				padding .75rem 0
+				text-align center
+				font-family Dancing Script
+				h1
+					margin 0
+					line-height 1
+				span
+					color main_color
+					font-family Dancing Script
+					line-height 1
+
+			#menu
+				a
+					border-left 1px solid main_color
+					color main_color
+					padding 5px 20px
+					&#info
+						border-right 1px solid main_color
+					&:hover
+						color cruel_love
+						transition all .55s
+				.dropdown-menu
+					padding 0
+					margin-top 28px
+					li
+						background color
+						a
+							border none
+							color main_color
+						&:hover
+							a
+								background main_color
+								color color
+								transition all 0.55s
+								border none
+		a
+			border-bottom 2px solid transparent
+			color color
+			font-family Droid
+			background none
+			border-radius 0
+			text-decoration none
+			&:hover
+				border-bottom 2px solid color
+				transition all 0.55s
+#foot
+	background color
+	border-top 1px solid color
+	font-size 14px
+	font-size 1.35rem
+	padding 1rem
+	.container
+		display flex
+		justify-content center
+		width 100%
+		.row
+			a
+				color main_color
+				text-decoration none
+				font-weight bold
+				&:hover
+					color cruel_love
+					transition all 0.55s
+			i
+				display block
+				margin-right 1%
+			.p
+				color main_color
+
+@media only screen and (max-device-width: 993px)
+	#head
+		background-color transparent
+		box-shadow none
+		.container
+			position relative
+			#bar-menu
+				background: rgba(color, .8)
+				display block
+				position absolute
+				color main_color
+				font-size 35px
+				font-size 1.5rem
+				right 20px
+				padding: .5rem;
+				top 20px
+				z-index 100
+			#resp-menu:checked ~ #opciones
+				left 0%
+			article
+				width 70%
+				text-align center
+				#main_logo
+					display none
+					margin-top 15px
+					margin-left 0%
+					width 100%
+					opacity 0
+			#opciones
+				width 100%
+				position absolute
+				background-color color
+				top 0
+				padding 0
+				left -100%
+				transition all 0.55s
+				#menu
+					margin 0
+					padding 0
+					width 100%
+					text-align justify
+					ul
+						position absolute
+						top -50%
+						left 150px
+						li
+							margin-top 0%
+					li
+						width 100%
+						display block
+
+@media only screen and (min-device-width: 641px) and (max-device-width: 767px)
+	#head
+		.container
+			article
+				#main_logo
+					margin-left 40px
+					span
+						font-size 11px
+						font-size 1.1rem
+
+				#menu
+					margin-right 40px
+					a
+						padding 5px 5px
+						font-size 10px
+						font-size 1rem

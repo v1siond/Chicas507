@@ -1,0 +1,271 @@
+img,
+video {
+  max-width: 100%;
+}
+.re_admin {
+  margin-bottom: 2rem;
+}
+.off {
+  display: none;
+}
+.active {
+  display: block;
+}
+.anuncio {
+  width: 95%;
+  margin: 7% auto 5%;
+  padding: 1rem;
+  border: 1px solid #000;
+}
+.panel-o {
+  background: #fff;
+}
+.fotos {
+  padding: 0 5rem;
+  margin-bottom: 5%;
+}
+.fotos-container {
+  border: 1px solid #000;
+  padding: 1rem;
+}
+.fotos-container .foto {
+  padding: 0 5rem;
+  margin: 1% auto;
+  height: 35rem;
+}
+.fotos-container img {
+  margin: 0;
+  vertical-align: top;
+  height: 100%;
+  width: 100%;
+}
+#container #registro .formulario {
+  border: 0.05rem solid #000;
+  padding: 2rem;
+}
+.button a,
+.button input[type=submit] {
+  display: block;
+  width: 100%;
+  border: 1px solid #000;
+  text-decoration: none;
+  color: #000;
+  padding: 0.5rem;
+  transition: all 1s;
+  font-family: Droid;
+  margin: 2% auto;
+}
+.button a:hover,
+.button input[type=submit]:hover {
+  border: 1px solid #fff;
+  background: #000;
+  color: #fff;
+}
+label {
+  color: #000;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 5% auto;
+  font-weight: normal;
+}
+form div:first-child label {
+  margin: 2% auto;
+}
+input,
+select {
+  padding: 0.5rem;
+  text-transform: capitalize;
+}
+input,
+select,
+textarea {
+  border: 1px solid #000;
+  color: #000;
+  font-weight: bold;
+}
+input:active,
+select:active,
+textarea:active,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 0;
+}
+.features_head h4,
+.servicios_head h4 {
+  font-size: 2.7rem;
+}
+.features_head p,
+.servicios_head p {
+  font-size: 2.2rem;
+}
+.features,
+.servicios {
+  padding: 0;
+}
+#datos_anuncio {
+  border-right: 1px solid #000;
+}
+.separador {
+  border-bottom: 1px solid #000;
+  margin: 5% 0 2% 0;
+}
+.enviar_anuncio {
+  border-top: 1px solid #000;
+  margin-top: 5%;
+  padding: 2rem;
+}
+#enviar_anuncio {
+  padding: 1rem;
+}
+.video_model label,
+.fotos_model label {
+  margin: 2% auto;
+}
+.video_model input,
+.fotos_model input {
+  margin: 2% auto;
+}
+.video_model .button,
+.fotos_model .button {
+  margin-top: 1%;
+}
+#bio {
+  max-height: 300px;
+  height: 300px;
+  max-width: 91.66666667%;
+  width: 91.66666667%;
+}
+.bio label {
+  margin-bottom: 2%;
+}
+#presentation {
+  max-height: 150px;
+  height: 150px;
+  max-width: 91.66666667%;
+  width: 91.66666667%;
+}
+.marco_pass {
+  border: 1px solid #000;
+  margin-top: 2rem;
+}
+.contra {
+  margin-bottom: 2rem;
+}
+.pago {
+  margin-bottom: 2rem;
+}
+.anuncio-admin {
+  padding: 1rem;
+}
+.admin-header {
+  margin: 5% auto 2%;
+}
+#modelo-cuadro {
+  border: 1px solid #000;
+  margin-bottom: 2%;
+  padding: 1rem;
+}
+@media only screen and (min-device-width: 1023px) {
+  #modelo-cuadro {
+    margin-left: 5.5%;
+  }
+}
+.info-model {
+  border-right: 1px solid #000;
+}
+.model-date,
+.status {
+  font-family: Droid;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+}
+.model-date span,
+.status span {
+  font-family: Droid;
+  color: cruel_love;
+}
+.options {
+  margin-top: 2%;
+  border-top: 1px solid #000;
+}
+.action {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-right: 1px solid #000;
+}
+.action a {
+  color: #000;
+  text-decoration: none;
+  transition: all 1s;
+}
+.action a:hover {
+  color: rgba(0,0,0,0.6);
+}
+.article-container input {
+  margin: 1rem auto;
+  padding: 1rem;
+}
+.article-container textarea {
+  max-height: 25rem;
+  min-height: 25rem;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 1rem;
+}
+.button-article {
+  transition: all 0.5s;
+}
+.button-article:hover {
+  background: #000;
+  color: #fff;
+}
+@media only screen and (max-device-width: 990px) {
+  .fotos-container {
+    padding: 1rem;
+  }
+  .fotos-container .foto {
+    margin: 2%;
+    margin-left: 5.65%;
+    padding: 0;
+  }
+  .info-model,
+  #datos_anuncio {
+    border: none;
+  }
+  .button,
+  .panel,
+  .panel-o {
+    float: none;
+  }
+  .listado {
+    padding: 2.3rem;
+  }
+  #modelo-cuadro {
+    margin-left: 0;
+  }
+  .admin-header {
+    margin: 2% auto;
+  }
+  .main_wrapper #sli_modelos #min_modelos {
+    display: none;
+  }
+  #container #registro .formulario {
+    margin-left: 5%;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 540px) {
+  .fotos-container {
+    padding: 0 5rem;
+  }
+  .fotos-container .foto {
+    padding: 0 5rem;
+  }
+}
+@media only screen and (min-device-width: 990px) {
+  #container #registro .formulario {
+    width: 50%;
+    margin-left: 25%;
+  }
+}

@@ -1,0 +1,282 @@
+letras  = black
+main_color  = white
+
+.active
+	border 4px solid white
+	transition all 0.2s
+.on
+	display block
+	
+.off
+	display none
+
+video
+	width 90%
+	height 10rem
+	margin-left 10%
+    
+.main_wrapper
+	width 100%
+	#sli_modelos
+		width 100%
+		height 100vh
+		position relative
+		#btn-next,  #btn-prev
+			position absolute
+			width 60px
+			height 60px
+			top 50%
+			transform translateY(-50%)
+			line-height 65px
+			color main_color
+			font-size 60px
+			font-size 6rem
+			font-family Droid
+			z-index 50
+			text-align center
+			border-radius 50%
+			cursor pointer
+			background-color rgba(letras, 0.3)
+			border 1px solid main_color
+			&:hover
+				color letras
+				background main_color
+				border 1px solid letras
+				transition all 0.55s
+		#btn-next
+			right 26%
+		#btn-prev
+			left 1%
+		#datos_model
+			position relative
+			width 100%
+			height 100%
+			padding 0
+			margin 0
+			overflow hidden
+			.foto_modelo-container
+				height 100%
+			#foto_modelo
+				height 100% 
+				border 1px solid letras
+				transition all 1s
+				padding 0
+				margin-left 12.5%
+			.datos
+				padding 0
+				height 100%
+				background rgba(main_color, 0.8)
+				border 1px solid letras
+				.llamame
+					text-align center
+					height auto
+					cursor pointer
+					margin 0
+					&:hover
+						background letras
+						transition all 0.55s
+						a, span
+							color main_color
+							transition all 0.55s
+					span, a
+						display inline-block
+						padding 5px
+						text-decoration none
+						text-shadow none
+				#presentacion
+					border-top 1px solid letras
+					width 95%
+					margin 2% auto
+					p
+						width 100%
+						font-size 14px
+						font-size 1.4rem
+						font-weight bold
+						text-align justify
+					h2, h3, p
+						margin 1% auto
+					h2
+						font-size 45px
+						font-size 3.5rem
+					h3
+						font-size 21px
+						font-size 2.1rem
+				#fotos
+					width 95%
+					margin 2% auto
+					border-top 1px solid letras
+					text-align center
+					img
+						margin-top 2%
+						width 80px
+						height 80px
+						padding 5px 5px
+						display inline-block
+						&:hover
+							opacity 0.6
+							transition all 0.55s
+				.dropdown-menu
+					background main_color
+					li
+						p
+							width 90% 
+							margin auto
+							text-align justify
+						div
+							text-align center
+						strong
+							text-align justify
+							margin-left 2%
+						span
+							margin-left 2%
+							cursor pointer
+						a
+							color letras
+							font-weight bold
+							background none
+							&:hover
+								background letras
+								color main_color
+								transition all 0.55s
+				.dropdown-toggle
+					display block
+					width 100%
+					border-radius 0
+					color letras
+					background none
+					text-transform: uppercase;
+					&:hover
+						background main_color
+						border-bottom 1px solid letras 
+						color letras
+						transition all 0.55s
+						span
+							color letras
+							transition all 0.55s
+					span
+						position absolute
+						right 20px
+				#model_filtro_dat
+					width 100%
+					.dropdown
+						padding 0
+						margin 0
+						width 100%
+					.llama
+						text-align center
+					.row
+						strong
+							color letras
+							display block
+							margin-left 10%
+						div
+							color letras
+						i
+							margin-right 2%
+					li
+						display block
+						width 100%
+						ul
+							width 100%
+							li
+			 					width 100%
+		#min_modelos::-webkit-scrollbar
+			width 0px
+			background none
+		#min_modelos
+			width 60%
+			height 150px
+			left 7.5%
+			position absolute
+			bottom 10px
+			background rgba(black, 0.8)
+			display flex
+			overflow scroll
+			overflow-y hidden
+			overflow-x hidden
+			opacity 0
+			transition all 1s
+			&:hover
+				opacity 1
+			img
+				display block
+				margin 1.5% auto 
+				margin-left 1.5%
+				width 15%
+				height 85%
+				opacity 0.6
+				&:hover
+					opacity 1
+					transform scale(1.1)
+					transition all 0.55s
+				
+@media only screen and (max-device-width: 990px)
+
+	.main_wrapper
+		#sli_modelos
+			height auto
+			#btn-next,  #btn-prev
+				width 30px
+				height 30px
+				line-height 30px
+				font-size 20px
+				font-size 2rem
+				top 50vh
+			#btn-next
+				right 1%
+			#datos_model
+				width 100%
+				height auto
+				#foto_modelo
+					height 100vh
+				.datos
+					#presentacion
+						h2
+							font-size 35px
+							font-size 3.5rem
+						h3
+							font-size 18px
+							font-size 1.8rem
+			#min_modelos
+				width 95%
+				left 2.5%
+				top 75vh
+				height 22vh
+				
+@media only screen and (min-device-width: 1441px)	
+
+	.main_wrapper
+		#sli_modelos
+			#datos_model
+				.datos
+					.llamame
+						span, a
+							font-size 30px
+							font-size 3rem
+					#presentacion
+						p
+							font-size 20px
+							font-size 2rem
+						h2
+							font-size 50px
+							font-size 5rem
+						h3
+							font-size 25px
+							font-size 2.5rem
+					#fotos
+						width 95%
+						margin 2% auto
+						border-top 1px solid letras
+						text-align center
+						img
+							width 120px
+							height 120px
+
+					#model_filtro_dat
+						.dropdown
+							a
+								font-size 20px
+								font-size 2rem		
+			#min_modelos
+				height 180px
+				bottom 20px

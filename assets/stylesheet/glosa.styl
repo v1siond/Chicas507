@@ -1,0 +1,167 @@
+letras  = black
+main_color  = white
+
+#container
+	width 100%
+	h4
+		margin-top 0%
+		color letras
+		font-family Droid
+		font-weight bold
+	#terminos
+		margin 2% auto
+		.nom_ter
+			width 90%
+			margin 2% auto
+			#des_term
+				width 100%
+				border-bottom 1px solid letras
+				padding 0
+				margin 2% auto
+				figure
+					padding 0
+					margin 2% auto
+					margin-top 0%
+					img
+						width 100%
+						height 120px
+				#post
+					margin 1% auto
+					margin-top 0%
+					span
+						font-size 12px
+						font-size 1.2rem
+					p
+						text-align justify
+		#boton
+			margin-top 2%
+			border 1px main_color
+			a
+				background letras
+				display block
+				width 100%
+				padding 5px
+				text-decoration none
+				color main_color
+				border 1px solid letras
+				&:hover
+					background main_color
+					color letras
+					border 1px solid letras
+					font-size 16px
+					font-size 1.6rem
+					transition all 0.55s
+				i
+					margin-left 1%
+	#publicidad
+		margin 2% auto
+		margin-left -1%
+		h4
+			display inline-block
+		a
+			text-decoration none
+			&:hover
+				color letras
+				transition all 0.55s
+		span
+			display inline-block
+		.twitter
+			margin 2% auto
+			text-align center
+		.post
+			overflow scroll
+			overflow-y hidden
+			overflow-x hidden
+			height 300px
+			.content
+				width 90%
+				height 100%
+				margin auto
+				img
+					padding 5px
+					width 100%
+					height 100%
+		.noticias
+			width 90%
+			margin 8% auto
+			.titulo
+				margin 2% auto
+			.posts
+				width 100%
+				.content
+					margin 2% auto
+					width 100%
+					border-bottom 1px solid letras
+					img
+						width 100%
+					span
+						margin 2% auto
+		
+@media only screen and (max-device-width: 990px)
+
+	#container
+		#mensaje
+			h2
+				font-size 25px
+				font-size 2.5rem
+			h3
+				font-size 19px
+				font-size 1.9rem
+		#terminos
+			.nom_ter
+				#des_term
+					figure
+						img
+							height auto
+					#post
+						h4
+							text-align center
+						span
+							display block
+							text-align center
+						p
+							text-align center
+		#publicidad
+			.noticias
+				.posts
+					.content
+						span
+							display block
+							font-size 12px
+							font-size 1.2rem
+							text-align center
+					
+@media only screen and (min-device-width: 1441px)	
+
+
+	#container
+		#mensaje
+			h2
+				font-size 40px
+				font-size 4rem
+			h3
+				font-size 32px
+				font-size 3.2rem
+		#terminos
+			.nom_ter
+				#des_term
+					figure
+						img
+							height auto
+					#post
+						h4
+							font-size 20px
+							font-size 2rem
+						span
+							font-size 20px
+							font-size 2rem							
+						p
+							font-size 20px
+							font-size 2rem							
+		#publicidad
+			.noticias
+				.posts
+					.content
+						span
+							font-size 20px
+							font-size 2rem

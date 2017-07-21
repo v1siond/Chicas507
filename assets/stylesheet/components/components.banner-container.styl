@@ -1,0 +1,33 @@
+.banner-container
+	background-color letras
+	&.-default
+		max-height 70vh
+		overflow hidden
+		position relative
+		width 100%
+	&.-fullheight
+		bottom 0
+		left 0
+		height 100vh
+		overflow: hidden
+		position absolute
+		right 0
+		top 0
+		transition all .65s
+		z-index -100
+	> .home-background
+		height 100%
+		left 0
+		position absolute
+		top 0
+		width 100%
+		@media (min-aspect-ratio: 16/9)
+			height 300%
+			top -100%
+		@media (max-aspect-ratio: 16/9)
+			width 300%
+			left -100%
+		@media only screen and (min-device-width: 993px)
+			margin-top 110px
+	> .background-cover img
+		width 100%

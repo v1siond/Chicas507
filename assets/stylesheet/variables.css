@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../font/fontAwesome/fontawesome-webfont.eot");
+  src: url("../font/fontAwesome/fontawesome-webfont.eot?#iefix") format('embedded-opentype'), url("../font/fontAwesome/fontawesome-webfont.woff") format('woff'), url("../font/fontAwesome/fontawesome-webfont.ttf") format('truetype'), url("../font/fontAwesome/fontawesome-webfont.svg#fontawesomeregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Droid;
+  font-style: normal;
+  src: url("../font/Droid_Serif/DroidSerif.ttf");
+}
+@font-face {
+  font-family: DroidBold;
+  font-style: normal;
+  src: url("../font/Droid_Serif/DroidSerif-Bold.ttf");
+}
+@font-face {
+  font-family: DroidItalic;
+  font-style: normal;
+  src: url("../font/Droid_Serif/DroidSerif-Italic.ttf");
+}
+@font-face {
+  font-family: DroidBoldItalic;
+  font-style: normal;
+  src: url("../font/Droid_Serif/DroidSerif-BoldItalic.ttf");
+}
+@font-face {
+  font-family: Dancing Script;
+  font-style: normal;
+  src: url("../font/DancingScript/DancingScript-Regular.ttf");
+}
+.d300 {
+  font-family: Droid, arial, sans-serif;
+  font-weight: 300;
+}
+.d600 {
+  font-family: DroidBold, arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.d400i {
+  font-family: DroidItalic, arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.d600i {
+  font-family: DroidBoldItalic, arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,112 @@
+#container {
+  width: 100%;
+}
+#container .error_exito {
+  border: 1px solid #000;
+  padding: 6rem;
+  margin-bottom: 4rem;
+}
+#container #terminos_condiciones {
+  margin: 2% auto;
+  padding: 0;
+}
+#container #terminos_condiciones .politicas {
+  width: 98%;
+  margin: 2% auto;
+  border-bottom: 1px solid #000;
+}
+#container #terminos_condiciones h2 {
+  margin: 2% auto;
+  text-align: justify;
+  font-family: Droid;
+  font-size: 25px;
+  font-size: 2.5rem;
+}
+#container #terminos_condiciones h3 {
+  margin: 2% auto;
+  text-align: justify;
+}
+#container #terminos_condiciones h3:after {
+  content: "";
+}
+#container #terminos_condiciones p {
+  font-size: 14px;
+  font-size: 1.4rem;
+  margin: 2% auto;
+}
+#container #terminos_condiciones ul li span {
+  display: block;
+  font-size: 12px;
+  font-size: 1.2rem;
+  text-align: left;
+  word-wrap: break-word;
+}
+#container #terminos_condiciones ul li span:before {
+  content: " - ";
+}
+@media only screen and (max-device-width: 799px) {
+  #container #mensaje h2 {
+    font-size: 25px;
+    font-size: 2.5rem;
+  }
+  #container #mensaje h3 {
+    font-size: 20px;
+    font-size: 2rem;
+  }
+  #container #terminos_condiciones .politicas {
+    width: 100%;
+  }
+  #container #terminos_condiciones h2 {
+    font-size: 20px;
+    font-size: 2rem;
+    text-align: center;
+  }
+  #container #terminos_condiciones h3 {
+    font-size: 18px;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  #container #terminos_condiciones h3:after {
+    content: " - ";
+  }
+  #container #terminos_condiciones p {
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+  #container #terminos_condiciones ul li span {
+    font-size: 10px;
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-device-width: 1441px) {
+  #container #mensaje h2 {
+    font-size: 40px;
+    font-size: 4rem;
+  }
+  #container #mensaje h3 {
+    font-size: 32px;
+    font-size: 3.2rem;
+  }
+  #container #terminos_condiciones .politicas {
+    width: 100%;
+  }
+  #container #terminos_condiciones h2 {
+    font-size: 32px;
+    font-size: 3.2rem;
+  }
+  #container #terminos_condiciones h3 {
+    font-size: 25px;
+    font-size: 2.5rem;
+  }
+  #container #terminos_condiciones h3:after {
+    content: " - ";
+  }
+  #container #terminos_condiciones p {
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+  #container #terminos_condiciones ul li span {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+}

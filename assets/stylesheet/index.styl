@@ -1,0 +1,586 @@
+letras  = black
+main_color  = white
+
+.main_wrapper
+	width 100%
+	display flex
+	flex-flow row wrap
+	header
+		order 1
+	#principal
+		position relative
+		order 2
+		width 100%
+		height 100vh
+		max-height: 1080px;
+		overflow hidden
+		&:before {
+			content ''
+			position absolute
+			width 100%
+			height 100%
+			background rgba(black, .5)
+			top 0
+			left 0
+			z-index 1 
+		}
+		h2, h3 
+			color main_color
+			z-index 2
+			text-align left
+			padding: 0
+		h2
+			font-size 3.5rem
+		#logo
+			position absolute
+			top 25%
+			left 40%
+			width 20%
+			z-index 40
+			img
+				width 100%
+		.boton
+			z-index: 9
+			text-align center
+			display inline-block
+			margin 2rem 15px 
+			a
+				display block
+				padding .5rem 1rem
+				font-size 12px
+				font-size 1.2rem
+				background main_color
+				color letras
+				text-decoration none
+				border 1px solid transparent
+				&:hover
+					border 1px solid letras
+					background main_color
+					color letras
+					transition all 0.55s
+		#btn-next,  #btn-prev
+			position absolute
+			top 50%
+			transform translateY(-50%)
+			color main_color
+			font-size 3rem
+			font-family Droid
+			z-index 50
+			text-align center
+			border-radius 50%
+			cursor pointer
+			background-color rgba(letras, 0.3)
+			border 1px solid main_color
+			padding: 5px 17.5px;
+			&:hover
+				color letras
+				background main_color
+				border 1px solid letras
+				transition all 0.55s
+		#btn-next
+			right 1%
+		#btn-prev
+			left 1%
+		#slider
+			display flex
+			width 300%
+			height 100%
+			.fondo
+				display flex
+				align-items flex-end
+				align-content flex-end
+				flex-wrap wrap
+				justify-content center
+				width 100%
+				height 100%				
+				.container
+					width 100%
+					margin-bottom 5%
+					z-index 10
+					position relative
+					@media only screen and (min-device-width: 990px)
+						padding 0 5rem
+			#slider1,
+			#slider2,
+			#slider3
+				background-repeat no-repeat 
+				background-position center center
+				background-attachment fixed	
+				background-size 100% 100%
+								
+			#slider1
+				background-image url('../images/2gal5.jpg')
+			#slider2
+				background-image url('../images/3gal8.jpg')
+				.container
+					width 100%
+					margin-bottom 70vh
+					@media only screen and (min-device-height: 1080px)
+						margin-bottom 800px
+					h2, h3
+						text-align right
+
+					h3
+						margin 0
+						margin-left: 33%
+						@media only screen and (max-device-width: 993px)
+							margin-left 0
+			#slider3
+				background-image url('../images/6gal1.jpg')
+	.secciones
+		order 3
+		flex-basis 100%
+		margin 2% auto
+		#chicas
+			width 100%
+			margin 2% auto
+			.row	
+				#unete
+					background url("../images/contrata.jpg") no-repeat center center
+					background-size cover 
+					height 400px
+					margin 2% auto
+				#contrata
+					background url("../images/registrate.jpg") no-repeat center center
+					background-size cover
+					height 400px
+					margin 2% auto
+				#unete, #contrata
+					border 1px solid main_color
+					h2
+						width 55%
+						margin auto
+						margin-top 300px
+						a
+							display block
+							width 100%
+							color main_color
+							font-size 22px
+							font-size 2.2rem
+							text-decoration none
+							border solid 1px main_color
+							background-color letras
+							padding 10px
+							text-shadow none
+							&:hover
+								border 1px solid letras
+								color letras
+								background-color main_color
+								transition all 0.55s
+		#premium_models
+			width 100%
+			height auto
+			margin 2% auto
+			img
+				width 100%
+				height 30rem
+			.img_premium
+				position relative
+			.etiqueta
+				position absolute
+				top 0
+				left 0
+				color letras
+				background main_color
+				padding .5rem
+				text-align center
+				border-right 1px solid letras
+				border-bottom 1px solid letras
+			.model
+				padding 0
+				margin 1% auto
+			.marco
+				border 1px solid letras
+			.col-xs-12
+				padding 0
+			button
+				border 1px solid main_color
+				transition all 1s
+				background letras
+				padding 1rem
+				display block
+				width 100%
+				color main_color	
+				text-shadow none
+				font-weight bold
+				text-decoration none
+				&:hover
+					border-top 1px solid letras
+					background main_color
+					color letras
+					font-weight bold
+			.datos
+				padding 1rem
+				p
+					font-size 3rem
+					font-family Droid
+					text-transform uppercase
+					font-weight bold
+				span
+					font-weight bold
+					text-transform uppercase
+		#galeria
+			width 100%
+			height auto
+			margin 2% auto
+			h2	a
+				font-size 2.5rem
+				display inline-block
+				width 100%
+				text-align center
+				border 1px solid letras
+				background main_color
+				color letras
+				text-shadow none
+				text-decoration none
+				padding .5rem 1rem
+				max-width 25rem
+				margin auto
+				margin 5rem auto 0
+				&:hover
+					background letras
+					color main_color
+					transition all 0.55s
+		#blog
+			width 100%
+			margin 2% auto
+			#ul_entra
+				width 95%
+				margin 2% auto
+				#entrada
+					.img_titulo
+						display flex
+						img
+							display block
+							margin 1% auto
+							width 30%
+							height 150px
+						div
+							width 70%
+							.titulo
+								margin 1% auto
+								width 100%
+								&:before
+									content ""
+								&:after
+									content ""
+							h3
+								font-size 22px
+								font-size 2.2rem
+							h4
+								width 100%
+								text-align center
+					.post
+						p
+							text-align justify
+						.leer
+							background letras
+							&:hover
+								background main_color
+								transition all 0.55s
+								a
+									color letras
+									border 1px solid letras
+									transition all 0.55s
+							a
+								border 1px solid main_color
+								color main_color
+								display block
+								font-size 20px
+								font-size 2rem
+								padding 10px
+								text-decoration none
+								text-align center
+								width 100%
+
+		#contacto
+			width 100%
+			margin 2% auto
+			#form_contact
+				width 80%
+				margin 2% auto
+				margin-left 10%
+				form
+					position relative
+					#inputs
+						width 35%
+						height 180px
+						input
+							display block
+							width 100%
+							max-width 100%
+							height 50px
+							margin-bottom 10px
+							padding-left 2rem
+					#com_env
+						position absolute
+						vertical-align top
+						right 0%
+						top 0%
+						width 62.5%
+						max-width 62.5%
+						height 170px
+						max-height 170px
+						margin-left 2.5%
+						textarea
+							width 100%
+							height 100%
+							max-height 170px
+							width 100%
+							max-width 100%
+							padding-left 2rem
+							padding-top 1rem
+					#boton
+						width 40%
+						max-width 40%
+						height 50px
+						max-height 50px
+						margin 2% auto
+						background letras
+						color main_color
+						border 1px solid main_color
+						font-weight bold
+						&:hover
+							background main_color
+							color letras
+							border 1px solid letras
+							transition all 0.55s
+			#redes-sociales
+				margin 2% auto
+				span
+					display inline-block
+					width 70px
+					height 70px
+					line-height 70px
+					margin-left 10px
+					a
+						display block
+						border-radius 50%
+						width 100%
+						height 100%
+						text-decoration none
+						background letras
+						border 1px solid main_color
+						color main_color
+						text-shadow none
+						font-weight bold
+						font-size 30px
+						font-size 3rem
+						&:hover
+							background main_color
+							color letras
+							border 1px solid letras
+							transition all 0.55s				
+	#foot
+		order 4
+		flex-basis 100%
+		
+@media only screen and (max-device-width: 990px)
+
+	.main_wrapper
+		#principal
+			#btn-next,  #btn-prev
+				display none
+			#logo
+				left 32.5%
+				width 35%
+				top 35vh
+			.mensaje
+				h2
+					font-size 25px
+					font-size 2.5rem
+				h3
+					font-size 18px
+					font-size 1.8rem
+			.mensaje2
+				span
+					font-size 12px
+					font-size 1.2rem
+				small
+					font-size 10px 
+					font-size 1rem
+			#slider
+				.fondo
+					.container
+						h3
+							width 100%
+							font-size 20px
+							font-size 2rem
+		.secciones
+			#mensaje
+				h2
+					font-size 25px
+					font-size 2.5rem
+				h3
+					font-size 19px
+					font-size 1.9rem
+			#galeria
+				width 100%
+				height auto
+				margin 2% auto
+				#damas	
+					#ir_gal
+						h2, h3
+							font-size 14px
+							font-size 1.4rem
+			#blog
+				#ul_entra
+					#entrada
+						margin 2% auto
+						.img_titulo
+							flex-flow wrap
+							img
+								width 100%
+								height 70vh
+							div
+								width 100%
+								.titulo
+									margin 1% auto
+									width 100%
+									&:before
+										content ""
+									&:after
+										content ""
+								h3
+									font-size 18px
+									font-size 1.8rem
+								h4
+									font-size 14px 
+									font-size 1.4rem
+			#contacto
+				#form_contact
+					width 95%
+					margin-left 2.5%
+					form
+						#inputs
+							width 100%
+							height auto
+						#com_env
+							position relative
+							width 100%
+							max-width 100%
+							height 35vh
+							max-height 35vh
+							margin-left 0%
+							textarea
+								max-height 35vh
+						#boton
+							width 100%
+							max-width 100%
+				#redes-sociales
+					margin 2% auto
+					span
+						width 40px
+						height 40px
+						line-height 40px
+						margin-left 5px
+						a
+							font-size 20px
+							font-size 2rem				
+
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 993px)
+
+	.main_wrapper
+		#principal
+			#logo
+				top 17.5vh
+				
+@media only screen and (min-device-width: 1441px)	
+
+	.main_wrapper
+			#principal
+				.mensaje
+					h2
+						font-size 40px
+						font-size 4rem
+					h3
+						font-size 32px
+						font-size 3.2rem
+				.mensaje2
+					span
+						font-size 20px
+						font-size 2rem
+					small
+						font-size 16px 
+						font-size 1.6rem
+				#entrar, #salir
+					a
+						font-size 30px 
+						font-size 3rem
+				#slider
+					.fondo
+						.container
+							h2
+								font-size 30px
+								font-size 3rem
+			.secciones
+				#mensaje
+					h2
+						font-size 40px
+						font-size 4rem
+					h3
+						font-size 32px
+						font-size 3.2rem
+				#chicas
+					.row	
+						#unete, #contrata
+							h2
+								a
+									font-size 28px
+									font-size 2.8rem
+				#galeria
+					#damas	
+						#ir_gal
+							h2, h3
+								font-size 25px
+								font-size 2.5rem
+				#blog
+					#ul_entra
+						#entrada
+							.img_titulo
+								img
+									width 40%
+									height 200px
+								div
+									width 60%
+									h3
+										font-size 28px
+										font-size 2.8rem
+									h4
+										font-size 20px 
+										font-size 2rem
+							.post
+								p
+									
+									font-size 22px
+									font-size 2.2rem
+								.leer
+									a 
+										font-size 30px
+										font-size 3rem
+				#contacto
+					#form_contact
+						form
+							#inputs
+								width 35%
+								height 270px
+								input
+									height 83px
+							#com_env
+								height 270px
+								max-height 270px
+								textarea
+									max-height 270px
+							#boton
+								height 70px
+								max-height 70px
+					#redes-sociales
+						span
+							width 100px
+							height 100px
+							line-height 100px
+							margin-left 15px
+							a
+								font-size 40px
+								font-size 4rem	
