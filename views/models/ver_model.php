@@ -18,6 +18,16 @@
 					<i class="flecha-down"><i class="flecha-down2"></i></i>
 				</div>
 			</header>
+			<section class="videos-container">
+				<?php if (isset($videos)): ?>
+					<?php foreach ($videos as $video): ?>
+						<video class="home-background" controls poster="<?php foreach ($fotos_model as $poster): echo route_images . $poster['foto']; break;?>
+						<?php endforeach ?>">
+							<source src="<?php echo route_videos . $video['video']?>" type="video/mp4">
+						</video>
+					<?php endforeach ?>
+				<?php endif ?>
+			</section>
 			<section class="fotos-container dragscroll">
 				<div class="slider">
 					<?php foreach ($fotos_model as $foto): ?>

@@ -23,7 +23,7 @@
 					<li><a href="<?php echo route_blog_index; ?>">BLOG</a></li>
 					<li><a id="info" href="<?php echo route_contact; ?>">CONTACTO</a></li>
 					<?php if (isset($_SESSION['user'])): ?>
-						<li class="busqueda-desktop"><a href="<?php echo route_admin; ?>">PERFIL</a></li>
+						<li class="busqueda-desktop"><a id="perfil" href="<?php echo route_admin; ?>">PERFIL</a></li>
 					<?php endif ?>
 				</ul>
 			</article>

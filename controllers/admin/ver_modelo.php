@@ -56,12 +56,11 @@
   $responde = array('si', 'no');
 
   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $user_id = $_POST['codigo'];
     if(isset($_POST["anuncio"])){
       if (isset($_POST["servicio"])) {
         $service = $_POST['servicio'];
       }
-
-      $user_id = $_POST['codigo'];
 
       $user_new = array(
         filter_var($_POST['bio']),
@@ -343,15 +342,15 @@
         $file_tmp = @getimagesize($_FILES['img']['tmp_name'][$key]);
         if (!empty($file_tmp)) {
 
-          $carpeta_destino = route_images;
-          $archivo_subido = $carpeta_destino . $key.$_FILES['img']['name'][$key];
+          $carpeta_destino = '../../assets/images/';
+          $archivo_subido = $carpeta_destino . $_FILES['img']['name'][$key];
           move_uploaded_file($_FILES['img']['tmp_name'][$key], $archivo_subido);
-          $img[$c] = $key.$_FILES['img']['name'][$key];
+          $img[$c] = $_FILES['img']['name'][$key];
           $guardado = $conexion->prepare('INSERT INTO fotos_modelo (id_foto, foto, modelo) VALUES (null, :foto, :id)');
 
           $guardado->execute(array(
             ':foto' => $img[$c],
-            ':id' => $id
+            ':id' => $user_id
             ));
         }
         $c++;
@@ -370,40 +369,37 @@
 
     if(isset($_POST["video"])){
       $limite_video = obtener_video_upload($conexion, $id);
-      $user_id = $model['codigo'];
       extract($_POST);
 
       $video = '';
 
-      if (empty($limite_video)) {
-        $carpeta_destino = route_videos;
+      $carpeta_destino = '../../assets/videos/';
 
-        $archivo_subido = $carpeta_destino . basename($_FILES['video']['name']);
+      $archivo_subido = $carpeta_destino . basename($_FILES['video']['name']);
 
-        $type = pathinfo($archivo_subido, PATHINFO_EXTENSION);
+      $type = pathinfo($archivo_subido, PATHINFO_EXTENSION);
 
-        if ($type != 'mp4' && $type != 'flv' && $type != 'avi' && $type != 'mpeg' && $type != '3gp') {
-          echo '<script language="javascript">alert("Formato de Archivo No Soportado");</script>';
-          header('Refresh: 1; url=' . route_admin);
-        }else{
-          $video = $_FILES['video']['name'];
-          move_uploaded_file($_FILES['video']['tmp_name'], $archivo_subido);
-          $guardado = $conexion->prepare('INSERT INTO video_modelo (id_video, video, modelo_video) VALUES (null, :video, :id)');
+      if ($type != 'mp4' && $type != 'flv' && $type != 'avi' && $type != 'mpeg' && $type != '3gp') {
+        echo '<script language="javascript">alert("Formato de Archivo No Soportado");</script>';
+        header('Refresh: 1; url=' . route_admin);
+      }else{
+        $video = $_FILES['video']['name'];
+        move_uploaded_file($_FILES['video']['tmp_name'], $archivo_subido);
+        $guardado = $conexion->prepare('INSERT INTO video_modelo (id_video, video, modelo_video) VALUES (null, :video, :id)');
 
-          $guardado->execute(array(
-            ':video' => $video,
-            ':id' => $user_id
-            ));
-          if (isset($guardado)) {
-            $error = $guardado->errorInfo();
-            foreach ($error as $errores) {
-              if(empty($errores)){
-                $errore = 'Video subido exitosamente';
-                header('Refresh: 3;url=' . route_ver_modelo_admin . '?id=' . $user_id);
-                $error = '';
-              }else{
-                echo $errore;
-              }
+        $guardado->execute(array(
+          ':video' => $video,
+          ':id' => $user_id
+          ));
+        if (isset($guardado)) {
+          $error = $guardado->errorInfo();
+          foreach ($error as $errore) {
+            if(empty($errore)){
+              $errore = 'Video subido exitosamente';
+              header('Refresh: 3;url=' . route_ver_modelo_admin . '?id=' . $user_id);
+              $error = '';
+            }else{
+              echo $errore;
             }
           }
         }

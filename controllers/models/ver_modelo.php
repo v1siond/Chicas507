@@ -21,6 +21,7 @@
 	$servicios = obtener_servicios_galeria($conexion);
 	$fotos_model = obtener_fotos_modelos($conexion);
 	$idiomas = obtener_idioma_model($conexion, $id_model);
+	$videos = obtener_video_upload($conexion, $id_model);
 
 	require '../../views/models/ver_model.php';
 	ob_end_flush();

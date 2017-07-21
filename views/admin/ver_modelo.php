@@ -24,7 +24,7 @@
 			</header>
 		</div>
 		<?php if (isset($model)): ?>
-		<div class="main-section row col-xs-12">
+			<div class="main-section row col-xs-12">
 				<form class="col-xs-12 col-lg-10" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" name="reg_model" enctype="multipart/form-data">
 					<input type="hidden" value="<?php echo $model['codigo']; ?>" name="codigo">
 					<div class="input-container col-xs-12">
@@ -399,12 +399,14 @@
 			<div class="col-xs-12 col-md-6 fotos_anuncio">
 				<div class="button col-xs-12 text-center"><a id="add_image"  href="#">Agregar Imagen</a></div>
 				<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" name="imagen" enctype="multipart/form-data" class="fotos_model">
+					<input type="hidden" value="<?php echo $model['codigo']; ?>" name="codigo">
 					<div class="button col-xs-12 text-center"><input type="submit" value="Subir Imagen" name="imagen"></div>
 				</form>
 			</div>
 			<div class="col-xs-12 col-md-6 video_anuncio">
 				<div class="button col-xs-12 text-center"><a id="add_video"  href="#">Agregar Video</a></div>
 				<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" name="video" enctype="multipart/form-data" class="video_model">
+					<input type="hidden" value="<?php echo $model['codigo']; ?>" name="codigo">
 					<div class="button col-xs-12 text-center"><input type="submit" value="Enviar Video" name="video"></div>
 				</form>
 			</div>

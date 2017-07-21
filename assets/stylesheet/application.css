@@ -488,8 +488,12 @@ span {
   color: #fff;
   padding: 5px 20px;
 }
-#head .container article #menu a#info {
+#head .container article #menu a#info,
+#head .container article #menu a#perfil {
   border-right: 1px solid #fff;
+}
+#head .container article #menu a#perfil {
+  border-left: none;
 }
 #head .container article #menu a:hover {
   color: #9e1333;
@@ -791,6 +795,9 @@ span {
 }
 .main-section > .gallery-container {
   width: 100%;
+}
+.main-section > .videos-container {
+  max-width: 70%;
 }
 .model-data {
   margin-top: 0.5rem;
